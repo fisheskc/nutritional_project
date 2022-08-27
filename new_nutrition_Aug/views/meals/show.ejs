@@ -1,0 +1,18 @@
+<% layout('layouts/boilerplate.ejs') %> 
+<%= messages %> 
+    <h2 class="header">This is your food intake that you have entered: </h2>
+    <ul>
+        <li class="mylinks">firstMeal: <%=meal.firstMeal %></li>
+        <li class="mylinks">secondMeal: <%=meal.secondMeal %></li>
+        <li class="mylinks">thirdMeal: <%=meal.thirdMeal %></li>
+        <li class="mylinks">snacks: <%=meal.snacks %></li>
+        <li class="mylinks">other: <%=meal.other %></li>
+        
+    </ul>
+    <h2 class="header">Nutritional information from your meals form</h2>
+    <!-- <a href="/meals">All meals</a> -->
+    <ul>
+        <% for(let food of foodinfo) { %>
+           <li class="mylinks"><%= food %></li>
+         <% } %>
+    </ul>

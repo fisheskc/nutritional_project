@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>All customers</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1>All customers</h1>
+        <ul>
+            <% for(let username of customers) { %>
+                <%= console.log(username) %>
+                <li><a href="/customers/<%= username._id %>"><%=username.username %></a></li>
+            
+                <% } %>
+        </ul>
+        
+    </body>
+</html>

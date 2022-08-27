@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=foodType.mealDetails %></title>
+</head>
+<body>
+    <h1><%=foodType.mealDetails %></h1>
+    <ul>
+        <li>starch: <%=foodType.starch %></li>
+        <li>carbohydrate: <%=foodType.carbohydrate %></li>
+        <li>proteins: <%=foodType.proteins %></li>
+        <li>sugar: <%=foodType.sugar %></li>
+        <li>sugar: <%=foodType.fiber %></li>
+    </ul>
+    <h2>Meals</h2>
+    <ul>
+        <%for(let meal of foodType.meals) {%>
+            <li><a href="/meals/<%= meal._id %>"><%=meal.firstMeal %></a></li>
+            
+        <% } %>  
+    </ul>
+    <a href="/food/<%=foodType._id%>/meals/new">Add meals</a>
+    <a href="/food">All food types</a>
+    <form action="/food/<%=foodType._id%>?_method=DELETE" method="POST">
+        <button>DELETE</button>
+    </form>
+</body>
+</html>

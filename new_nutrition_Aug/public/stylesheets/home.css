@@ -1,0 +1,44 @@
+body {
+    height: 100vh;
+    background-color: aqua;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+    /* the url below is stored on cloudinary */
+    url("https://res.cloudinary.com/dvsawygzc/image/upload/v1661373991/Nutrition/health_food_rbvwcq.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.headerHome {
+    color: #19b185;
+    font: "Fira Sans", sans-serif !important;
+    font-weight: bold;
+    font-size: 2.5em;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+p.para {
+    font: "Fira Sans", sans-serif !important;
+    font-size: 1.5em !important;
+    color: #dfeedf;
+}
+.nav-link {
+    padding: 0.25rem 0;
+    font-weight: 700;
+    margin-left: 1rem;
+    color: #62d9a0
+}
+a#regLinkHome  {
+    font: "Fira Sans", sans-serif !important;
+    margin-left: 0px !important;
+    font-size: 1em !important;
+    font-weight: bold;
+    color: #19b185 !important;
+}
+
+.bold-words {
+    font: "Fira Sans", sans-serif !important;
+    font-weight: bold;
+}

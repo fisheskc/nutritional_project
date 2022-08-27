@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutritional Info</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheets/home.css">
+
+</head>
+<body class="cover-container d-flex flex-column vh-100">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-color">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="navbar-nav">
+                            <a class="nav-link link-col" href="/">Home</a>
+                            <a class="nav-link link-col" href="/meals">Meals</a>
+                        </div>
+                        <div class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <% if(!currentUser) { %>
+                            <a class="nav-link link-col" href="/customers/login">Login</a>
+                            <a class="nav-link link-col" href="/customers/register">Register</a>
+                            <% } else { %>
+                            <a class="nav-link link-col" href="/customers/logout">Logout</a>
+                            <% } %>
+                        </div>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success search" type="submit">Search</button>
+                        </form>
+                    </div>
+                 </div>
+            </nav>
+        <main  class="container mt-5">
+            <h2 class="headerHome">Nutritional Info</h2>
+            <p class="para">This is my nutitional info project. You can enter all your daily meals in the meals/new section. <a id="regLinkHome" href="/customers/register">Register here</a> first for your nutritional information.</p>
+        </main>
+        <footer class="footer bg-dark py-3 mt-auto">
+            <div class="container">
+                <span class="text-muted">&copy; Nutrition Project 2022</span>
+            </div>
+        </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymou"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+
+</html>

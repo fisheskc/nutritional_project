@@ -1,0 +1,59 @@
+/* body {
+    background-color: aqua;
+} */
+
+.nav-color {
+    background-color: #198754 !important;
+}
+
+.search  {
+    color: #fff;
+    border: 2.25px solid !important;
+    background-color: #198754;
+    border-color: #fff;
+}
+.link-col {
+    color: #fff !important;
+}
+
+.loginB  {
+    color: #198754;
+    border: 2.25px solid !important;
+    background-color: transparent;
+    border-color: #198754;
+}
+
+.header {
+    color: #014f2a;
+    font: "Fira Sans", sans-serif !important;
+    font-weight: bold;
+    font-size: 2.5em;
+}
+
+a.meals-links {
+    margin-top: -15px;
+    margin-left: -10px;
+    color: #198754 !important;
+    font-size: 1.25em !important;  
+}
+
+.mylinks {
+    font: "Fira Sans", sans-serif !important;
+    margin-left: -10px !important;
+    font-size: 1.25em !important;
+    color: #014f2a;
+}
+a#regLink  {
+    font: "Fira Sans", sans-serif !important;
+    margin-left: 0px !important;
+    font-size: 1em !important;
+    font-weight: bold;
+    color: #014f2a !important;
+}
+
+a.new-meals {
+    margin: 5px 0px 10px -10px;
+    color: #198754 !important;
+    font-size: 1.25em !important;  
+    font-weight: bold;
+}

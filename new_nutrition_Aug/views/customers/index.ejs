@@ -1,0 +1,14 @@
+<% layout('../layouts/boilerplate.ejs') %>
+    <body>
+        <%= messages %>
+        <h1>All customers</h1>
+        <ul>
+            <% for(let username of user) { %>
+                <%= console.log(`This is username: ${username}`) %>
+                <li><a href="/customers/<%= username._id %>"><%=username.username %></a></li>
+            
+                <% } %>
+        </ul>
+        
+    </body>
+</html>

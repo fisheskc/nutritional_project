@@ -1,0 +1,17 @@
+<% layout('layouts/boilerplate.ejs') %> 
+<%= messages %>    
+       <h2 class="header">Login</h2>
+            <form action="/customers/login" class="row g-3 validated-form" method="POST">
+                <div class="col-md-6">
+                    <label class="form-label" for="username">Enter customer:</label>
+                    <input class="form-control" type="text" id="username" name="username" placeholder="username" required>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label" for="password">Enter password:</label>
+                    <input class="form-control" type="password" id="password" name="password" placeholder="password">
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-success" type="submit">Login</button>
+                </div>
+        </form>
+       

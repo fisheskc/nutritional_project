@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All meals</title>
+</head>
+<body>
+    <h1>All food types</h1>
+    <ul>
+        <% for(let foodType of foodTypes) { %>
+            <li><a href="food/<%= foodType._id %>"><%=foodType.mealDetails %></a></li> 
+            <% } %>
+    </ul>
+    <a href="/food">All food types</a>
+</body>
+</html>
